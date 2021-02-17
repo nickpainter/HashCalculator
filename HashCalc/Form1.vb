@@ -125,7 +125,7 @@ Public Class Form1
 
     Public Function CheckHash(referenceHash As String, calculatedHash As String)
         'compares the reference hash to the calculated hash.  If the two are the same returns true.  Else returns false.
-        If referenceHash = calculatedHash Then
+        If referenceHash.ToUpper() = calculatedHash.ToUpper Then
             Return True
         Else
             Return False
